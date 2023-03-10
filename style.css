@@ -1,0 +1,58 @@
+._ibg {
+	position: relative;
+}
+
+._ibg img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+body {
+	padding: 60px 0;
+	display: flex;
+	gap: 20px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	flex: 0 0 400px;
+	background-color: aqua;
+}
+
+
+
+
+
+.swiper {
+	flex: 1 1 auto;
+	height: 880px;
+	/* overflow: visible; */
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.swiper-scrollbar {}
+
+.swiper-pagination-bullet {
+	height: 40px;
+	width: 40px;
+	background-color: red;
+}
+
+
+
+
+.swiper-pagination-bullet-active {}

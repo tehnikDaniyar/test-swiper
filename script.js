@@ -28,3 +28,27 @@ const swiper = new Swiper(".swiper", {
 		el: '.swiper-scrollbar',
 	},
 });
+
+
+
+function getRandomColor() {
+	return Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+};
+
+function chageColor() {
+	let block = document.querySelector('.forRandomColor');
+	let color = '#' + getRandomColor().toString(16) + getRandomColor().toString(16) + getRandomColor().toString(16);
+	block.style.backgroundColor = color;
+	block.textContent = color;
+};
+
+const button = document.querySelector('button');
+chageColor();
+
+
+button.addEventListener('click', () => {
+	chageColor();
+})
+
+
+

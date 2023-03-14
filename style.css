@@ -73,3 +73,29 @@
 	font-size: 32px;
 	font-weight: 600;
 }
+
+.wrapper {
+	width: 100px;
+	height: 40px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+
+}
+
+.loaderLine {
+	height: 40px;
+	background-color: orange;
+	z-index: 5;
+}
+
+.timer {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+}

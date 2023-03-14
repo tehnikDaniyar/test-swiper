@@ -48,7 +48,38 @@ chageColor();
 
 button.addEventListener('click', () => {
 	chageColor();
-})
+});
+
+
+const parent = document.querySelector('body');
+let wrapper = document.createElement('div');
+let loader = document.createElement('div');
+let timer = document.createElement('div');
+let myInterval;
+
+
+wrapper.classList.add("wrapper");
+loader.classList.add("loaderLine");
+timer.classList.add('timer');
+
+wrapper.append(loader);
+parent.append(wrapper)
+wrapper.append(timer)
+console.log(timer);
+
+loader.style.width = "0%";
+
+let counter = 0;
+
+myInterval = setInterval(() => {
+	counter += 1;
+	timer.textContent = `${counter}%`;
+	counter < 89 ? loader.style.width = `${counter}%` : clearInterval(1);
+}, 50);
+
+console.log(myInterval);
+
+
 
 
 
